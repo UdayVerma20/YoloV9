@@ -42,7 +42,7 @@ $ roslaunch yolov9_ros detect.launch
   ```
   <div align="center">
     <a href="./">
-        <img src="./ros/img/info.png" width="79%"/>
+        <img src="./yolov9_ros/ros/img/info.png" width="79%"/>
     </a>
   </div>
 
@@ -50,6 +50,6 @@ $ roslaunch yolov9_ros detect.launch
 
 <div align="center">
     <a href="./">
-        <img src="./ros/img/result.png" width="79%"/>
+        <img src="./yolov9_ros/ros/img/result.png" width="79%"/>
     </a>
 </div>
