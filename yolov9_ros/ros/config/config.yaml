@@ -3,11 +3,11 @@ ros:
   pub_detect_topic_name: "/detect_info" # (output)detection result topic name
 
 yolo:
-  yolo_path: "/workspace/HDD1/ros_workspace/yolo_ws/src/yolov9_ros"
+  yolo_path: "/home/uday/catkin_ws/src/YoloV9/yolov9_ros" # insert path to yolov9_ros folder
   image_width: 640
   image_height: 480
-  weight_path: "/workspace/HDD1/yolov9/weight/yolov9-c-converted.pt"
-  visualize: false
+  weight_path: "/home/uday/catkin_ws/src/yolov9_ros/ros/weights.pt" #insert path to weights
+  visualize: false # check true to see bounding boxes detected
 
   # publish visualize image
   pub_detect_image_topic_name: "/detect_result_img" # if you don't want, check False
