@@ -1,56 +1,7 @@
 # YOLOv9
-Add ROS package for YOLOv9  
-### Build
-```
-$ cd (your_ros_ws)/src
-$ git clone https://github.com/SanghyunPark01/yolov9_ros.git
-$ cd ..
-$ catkin_make
-```
-
-### Modify Config
-* modify `ros/config/config.yaml`  
-* modify variable `yolo_path` in `ros/scripts/detect_ros.py`(top of code)  
-* modify config file path in `ros/launch/detect.launch`  
-
-### Run
-```
-$ chmod +x (your_ros_ws/src/yolov9_ros/ros/scripts/detect_ros.py)
-$ roslaunch yolov9_ros detect.launch
-```  
-
-### Result
-**Publish**:  
-* sensor_msgs/PointCloud
-  ```
-  header->stamp : same as image time
-  channels->name
-    L size
-    L object_1's name
-    L object_2's name
-    :
-    :
-  channels->vallues
-    L number of object
-    L object_1's [conf,x1,y1,x2,y2]
-    L object_2's [conf,x1,y1,x2,y2]
-    :
-    :
-  ```
-  <div align="center">
-    <a href="./">
-        <img src="./ros/img/info.png" width="79%"/>
-    </a>
-  </div>
-
-* senor_msgs/Image (Optional) -> modify `config.yaml`
-
-<div align="center">
-    <a href="./">
-        <img src="./ros/img/result.png" width="79%"/>
-    </a>
-</div>
-
+ 
+### Original Repository
+https://github.com/SanghyunPark01/yolov9_ros
 ---
 Implementation of paper - [YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information](https://arxiv.org/abs/2402.13616)
 
@@ -210,32 +161,6 @@ python -m torch.distributed.launch --nproc_per_node 8 --master_port 9527 train_d
 ## Re-parameterization
 
 See [reparameterization.ipynb](https://github.com/WongKinYiu/yolov9/blob/main/tools/reparameterization.ipynb).
-
-
-## Citation
-
-```
-@article{wang2024yolov9,
-  title={{YOLOv9}: Learning What You Want to Learn Using Programmable Gradient Information},
-  author={Wang, Chien-Yao  and Liao, Hong-Yuan Mark},
-  booktitle={arXiv preprint arXiv:2402.13616},
-  year={2024}
-}
-```
-
-```
-@article{chang2023yolor,
-  title={{YOLOR}-Based Multi-Task Learning},
-  author={Chang, Hung-Shuo and Wang, Chien-Yao and Wang, Richard Robert and Chou, Gene and Liao, Hong-Yuan Mark},
-  journal={arXiv preprint arXiv:2309.16921},
-  year={2023}
-}
-```
-
-
-## Teaser
-
-Parts of code of [YOLOR-Based Multi-Task Learning](https://arxiv.org/abs/2309.16921) are released in the repository.
 
 
 ## Acknowledgements
