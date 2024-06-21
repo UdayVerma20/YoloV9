@@ -12,7 +12,7 @@ from sensor_msgs.msg import PointCloud, ChannelFloat32
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # Please change YOLO root ditectory!
-yolo_path = '/workspace/HDD1/ros_workspace/yolo_ws/src/yolov9_ros'
+yolo_path = '/home/uday/catkin_ws/src/YoloV9/yolov9_ros'
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 sys.path.insert(0, yolo_path)
