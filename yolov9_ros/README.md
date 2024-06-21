@@ -1,8 +1,8 @@
 # YOLOv9
  
-### Original Repository
+## Original Repository
 https://github.com/SanghyunPark01/yolov9_ros
----
+<br>
 Implementation of paper - [YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information](https://arxiv.org/abs/2402.13616)
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/kadirnar/Yolov9)
