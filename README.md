@@ -16,6 +16,13 @@ $ pip uninstall opencv-python-headless
 * modify variable `yolo_path` in `ros/scripts/detect_ros.py`(top of code)  
 * modify config file path in `ros/launch/detect.launch`
 
+### Test Weights
+```
+$ cd (your_ros_ws)/src/YoloV9/yolov9_ros
+$ python detect.py --weights weights.pt --source 0 -- conf 0.5 --device 0
+```
+--weights (relative path to weights) --source (image path or 0 for webcam) -- conf (detection confidence score threshold) --device ( cpu for windows, 0 for gpu { check torch.cuda.is_available() for gpu access})
+
 ### Run
 ```
 $ chmod +x (your_ros_ws/src/YoloV9/yolov9_ros/ros/scripts/detect_ros.py)
