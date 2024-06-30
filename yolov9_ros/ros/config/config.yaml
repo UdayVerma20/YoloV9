@@ -1,13 +1,14 @@
 ros:
-  sub_img_topic_name: "/kitti/camera_color_left/image_raw" # image topic name
+  sub_img_topic_name: "/zed/left/image_rect_color" # image topic name 
+  # Eufs topic : /zed/left/image_rect_color
   pub_detect_topic_name: "/detect_info" # (output)detection result topic name
 
 yolo:
   yolo_path: "/home/uday/catkin_ws/src/YoloV9/yolov9_ros" # insert path to yolov9_ros folder
   image_width: 640
   image_height: 480
-  weight_path: "/home/uday/catkin_ws/src/yolov9_ros/ros/weights.pt" #insert path to weights
-  visualize: false # check true to see bounding boxes detected
+  weight_path: "/home/uday/catkin_ws/src/YoloV9/yolov9_ros/ros/weights.pt" #insert path to weights
+  visualize: true # check true to see bounding boxes detected
 
   # publish visualize image
   pub_detect_image_topic_name: "/detect_result_img" # if you don't want, check False
