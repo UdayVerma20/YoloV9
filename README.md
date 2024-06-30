@@ -78,7 +78,7 @@ roslaunch yolov9_ros1 detect.launch
   ```
   <div align="center">
     <a href="./">
-        <img src="./yolov9_ros/ros/img/info.png" width="79%"/>
+        <img src="./yolov9_ros1/ros/img/info.png" width="79%"/>
     </a>
   </div>
 
@@ -86,6 +86,6 @@ roslaunch yolov9_ros1 detect.launch
 
 <div align="center">
     <a href="./">
-        <img src="./yolov9_ros/ros/img/result.png" width="79%"/>
+        <img src="./yolov9_ros1/ros/img/result.png" width="79%"/>
     </a>
 </div>
