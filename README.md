@@ -36,6 +36,9 @@ $ cd (your_ros_ws)/src/YoloV9/yolov9_ros
 $ pip install -r requirements.txt
 $ pip uninstall opencv-python-headless
 ```
+### Download weights
+https://drive.google.com/file/d/1vX-n-9EOz5cMVYtYl_za2PolRBuvcg3g/view?usp=sharing 
+Install in directory yolov9_ros/ros
 
 ### Modify Config
 * modify `ros/config/config.yaml`  
