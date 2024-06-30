@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>yolov9_ros</name>
+  <name>yolov9_ros1</name>
   <version>0.0.0</version>
   <description>The yolov9_ros_example package</description>
 
