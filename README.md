@@ -29,7 +29,7 @@ $ roslaunch robot_control rqt_robot_control.launch
 ### Build Yolo
 ```
 $ cd (your_ros_ws)/src
-$ git clone https://github.com/UdayVerma/YoloV9.git
+$ git clone https://github.com/UdayVerma20/YoloV9.git
 $ cd ..
 $ catkin_make
 $ cd (your_ros_ws)/src/YoloV9/yolov9_ros
