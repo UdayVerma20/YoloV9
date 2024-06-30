@@ -1,6 +1,32 @@
 # YOLOv9
- 
-### Build
+### Install Eufs_Sim
+Install requirements
+```
+$ sudo apt update
+$ sudo apt-get install ros-noetic-ackermann-msgs ros-noetic-twist-mux ros-noetic-joy ros-noetic-controller-manager ros-noetic-velodyne-simulator ros-noetic-effort-controllers ros-noetic-velocity-controllers ros-noetic-joint-state-controller ros-noetic-gazebo-ros-control ros-noetic-hector-gazebo-plugins
+```
+Clone Library
+```
+$ cd catkin_ws/src
+$ git clone https://github.com/eufsa/eufs_sim
+⁠$ cd .. 
+⁠$ catkin_make
+```
+
+Change python to python3 in executable files
+```
+$ gedit src/eufs_sim/robot_control/nodes/twist_to_ackermannDrive.py
+```
+Run
+```
+$ roslaunch eufs_gazebo small_track.launch
+```
+Publish Joint States
+```
+$ roslaunch robot_control rqt_robot_control.launch
+```
+
+### Build Yolo
 ```
 $ cd (your_ros_ws)/src
 $ git clone https://github.com/UdayVerma/YoloV9.git
